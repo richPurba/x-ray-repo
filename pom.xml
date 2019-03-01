@@ -1,0 +1,44 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <!--<parent>-->
+        <!--<groupId> com.learning</groupId>-->
+        <!--<artifactId>0.0.1-SNAPSHOT</artifactId>-->
+        <!---->
+    <!--</parent>-->
+    <groupId>com.learning</groupId>
+    <artifactId>x-ray-services</artifactId>
+    <packaging>war</packaging>
+    <version>0.0.1-SNAPSHOT</version>
+    <!--<url>http://x-ray.adam-bien.com</url>-->
+    <dependencies>
+        <dependency>
+            <groupId>javax</groupId>
+            <artifactId>javaee-api</artifactId>
+            <version>7.0</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.hazelcast</groupId>
+            <artifactId>hazelcast</artifactId>
+            <version>3.5.4</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>javax.cache</groupId>
+            <artifactId>cache-api</artifactId>
+            <version>1.0.0</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <finalName>x-ray</finalName>
+    </build>
+    <properties>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+    <project.build.sourceEncodeing>UTF-8</project.build.sourceEncodeing>
+    <failOnMissingWebXml>false</failOnMissingWebXml>
+    <failOnMissingWebXml>false</failOnMissingWebXml>
+    </properties>
+</project>

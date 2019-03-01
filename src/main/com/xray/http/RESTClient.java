@@ -90,7 +90,7 @@ public class RESTClient {
     }
     public InetAddress getInetAddress(){return inetAddress;}
 
-    public String getPath(){return path};
+    public String getPath(){return path;};
 
     public int getPort(){return port;}
 
